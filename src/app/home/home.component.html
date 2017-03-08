@@ -1,0 +1,90 @@
+<section class="row contentA">
+    <section class="col-md-8 contentA-left">
+        <section class="contentA-left-top">
+            <h3>分类信息</h3>
+            <ul class="row">
+                <li *ngFor="let item of fenlei" class="col-md-3 col-xs-3">
+                    <i class="iconfont icon-{{item.icon}}"></i>
+                    <span>{{item.text}}</span>
+                </li>
+            </ul>
+        </section>
+        <section class="contentA-left-bottom">
+            <section class="contentA-left-top">
+                <h3>丰顺生活</h3>
+                <ul>
+                    <li *ngFor="let item of shenghuo">
+                        <i class="iconfont icon-{{item.icon}}"></i>
+                        <span>{{item.text}}</span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <section class="col-md-4 contentA-right">
+         <h3>丰顺生活</h3>
+         <ul>
+            <li *ngFor="let item of xinwen; let index = index">
+                <a href="#/{{index}}">
+                    <span>{{item}}</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</section>
+<section class="row contentB">
+    <section class="news-header">
+        <img src="../../assets/image/新闻圆弧.png" alt="中国窗"/>
+        <h2>丰顺新闻</h2>
+        <img src="../../assets/image/新闻扇子.png" alt="中国扇" />
+        <img src="../../assets/image/新闻灯笼.png" alt="红灯笼" />
+        <img src="../../assets/image/新闻灯笼.png" alt="红灯笼" />
+    </section>
+    <section class="col-md-4 contentB-top-left">
+        <carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
+            <slide *ngFor="let slidez of slides;">
+                <img [src]="slidez" style="width: 100%; height:300px">
+            </slide>
+        </carousel>
+    </section>
+    <section class="col-md-8 contentB-top-right">
+        <h3>焦点新闻</h3>
+        <ul>
+            <li *ngFor="let item of xinwen; let index = index">
+                <a href="#/{{index}}">
+                    <span>{{item}}</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="col-md-4 contentB-bottom">
+        <h3>学校教育</h3>
+        <ul>
+            <li *ngFor="let item of xinwen; let index = index">
+                <a href="#/{{index}}">
+                    <span>{{item}}</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="col-md-4 contentB-bottom">
+        <h3>节日文化</h3>
+        <ul>
+            <li *ngFor="let item of xinwen; let index = index">
+                <a href="#/{{index}}">
+                    <span>{{item}}</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="col-md-4 contentB-bottom">
+        <h3>文化活动</h3>
+        <ul>
+            <li *ngFor="let item of xinwen; let index = index">
+                <a href="#/{{index}}">
+                    <span>{{item}}</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</section>

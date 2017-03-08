@@ -1,0 +1,48 @@
+footer{
+    min-height: 160px;
+    margin: 0 7.5%;
+    margin-top: 35px;
+}
+footer .col-md-2, footer .col-md-8{
+    height: 100%;
+}
+.footer-A i{
+    font-size: 2.5rem;
+    color: #333;
+}
+.footer-ul{
+    display: inline-block;
+}
+.footer-ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+.footer-ul li:first-child{
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-family: '黑体';
+    font-weight: 600;
+}
+.phone, .company{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.phone{
+    background-color: #eee;
+    color: #555;
+}
+.phone i{
+    font-size: 2.8rem;
+    color: #222;
+    margin: 0;
+}
+.phone span{
+    font-size: 1.9rem
+}
+.company{
+    background-color: #555;
+    color: #fff
+}

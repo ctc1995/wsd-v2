@@ -1,0 +1,33 @@
+<footer>
+    <section class="row">
+        <section class="col-md-2 footer-A">
+            <section>
+                <img src="../../assets/image/footer-logo.png" alt="微时代" style="display: inline-block; padding-right: 15px;">
+                <span style="font-size: 3rem">微时代</span>
+            </section>
+            <section>
+                <span>关注我们</span>
+                <i class="iconfont icon-wechat" style="margin-left: 15px;"></i>
+                <i class="iconfont icon-sina"></i>
+            </section>
+        </section>
+        <section class="col-md-8 footer-list">
+            <ul *ngFor="let item of footerList" class="col-md-3 footer-ul">
+                <li>{{item.title}}</li>
+                <li *ngFor="let list of item.listItem">
+                    {{list}}
+                </li>
+            </ul>
+        </section>
+        <section class="col-md-2">
+            <img src="../../assets/image/二维码.png" alt="微信二维码">
+        </section>
+    </section>
+</footer>
+<section class="phone">
+    <i class="iconfont icon-iconfont10"></i>
+    <span>400-644-0451</span>
+</section>
+<section class="company">
+    <span>版权所有：梅州市微时代网络传媒有限公司 - 创e谷　梅B1.B2-20161202-4</span>
+</section>
